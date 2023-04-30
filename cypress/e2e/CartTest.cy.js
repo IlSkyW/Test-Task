@@ -26,9 +26,9 @@ describe("Cart Test", () => {
     mainPage.openCategory("Смартфони, ТВ і електроніка");
     mainPage.openSubCategory("Мобільні телефони");
     productsListPage.openFirstProduct();
-    cy.wait(10000);
+    cy.wait(5000);
     productPage.clickBuyButton();
-    cy.wait(10000);
+    cy.wait(5000);
 
     // Verify information of items inside the basket
     cartPage.verifyCountProductsInCart(2);
