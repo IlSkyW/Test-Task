@@ -7,7 +7,7 @@ class productsListPage {
   }
 
   clickBuyButton() {
-    return cy.contains("Купити").click();
+    return cy.contains("Купити").should("be.visible").click();
   }
 
   verifyProductTitle() {
